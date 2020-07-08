@@ -15,14 +15,26 @@ import UIKit
             self.leftView = paddingView
             self.leftViewMode = .always
             
-            let border = CALayer()
+            /*let border = CALayer()
             let width = CGFloat(2.0)
         border.borderColor = UIColor.blue.cgColor
             border.frame = CGRect(x: 0, y: self.bounds.height - width, width:self.frame.size.width,height: self.frame.size.height)
         border.borderWidth = width
-        self.layer.addSublayer(border)
+        self.layer.addSublayer(border)*/
         self.layer.masksToBounds = true
+            //self.backgroundColor = UIColor.init(white: 0.5, alpha: 0.2)
     }
+        @IBInspectable var bcColor : UIColor? {
+                   didSet{
+                    self.backgroundColor = bcColor
+                   }
+               }
+        
+        @IBInspectable var cornerRadius : CGFloat = 0 {
+            didSet{
+                self.layer.cornerRadius = cornerRadius
+            }
+        }
  @IBInspectable var placeHolderColor: UIColor? {
               get {
                   return self.placeHolderColor
