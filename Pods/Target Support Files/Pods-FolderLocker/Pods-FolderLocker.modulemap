@@ -1,0 +1,6 @@
+framework module Pods_FolderLocker {
+  umbrella header "Pods-FolderLocker-umbrella.h"
+
+  export *
+  module * { export * }
+}

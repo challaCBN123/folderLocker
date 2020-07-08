@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03EA2FB573EAD2D9B04780D5 /* Pods_FolderLocker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF6EE02B516D55B53F9F54F /* Pods_FolderLocker.framework */; };
 		4CE1AC8124B5291500A1E05B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1AC8024B5291500A1E05B /* AppDelegate.swift */; };
 		4CE1AC8324B5291500A1E05B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1AC8224B5291500A1E05B /* SceneDelegate.swift */; };
 		4CE1AC8524B5291500A1E05B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1AC8424B5291500A1E05B /* ViewController.swift */; };
@@ -15,6 +16,15 @@
 		4CE1AC8D24B5291900A1E05B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE1AC8B24B5291900A1E05B /* LaunchScreen.storyboard */; };
 		4CE1AC9824B5291A00A1E05B /* FolderLockerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1AC9724B5291A00A1E05B /* FolderLockerTests.swift */; };
 		4CE1ACA324B5291A00A1E05B /* FolderLockerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1ACA224B5291A00A1E05B /* FolderLockerUITests.swift */; };
+		4CE1ACB324B5324C00A1E05B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CE1ACB224B5324C00A1E05B /* GoogleService-Info.plist */; };
+		4CF8273924B58340008B3F73 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8273824B58340008B3F73 /* SignUpVC.swift */; };
+		4CF8273B24B583EA008B3F73 /* FilesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8273A24B583EA008B3F73 /* FilesVC.swift */; };
+		4CF8273D24B5842F008B3F73 /* textField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8273C24B5842F008B3F73 /* textField.swift */; };
+		4CF8273F24B58444008B3F73 /* buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8273E24B58444008B3F73 /* buttons.swift */; };
+		4CF8274124B584B8008B3F73 /* tapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8274024B584B8008B3F73 /* tapGesture.swift */; };
+		4CF8274324B584D7008B3F73 /* alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8274224B584D7008B3F73 /* alerts.swift */; };
+		754A1DCBCE011D23C28EA64F /* Pods_FolderLockerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6CCC3A5DCDEF6411C2B6253 /* Pods_FolderLockerTests.framework */; };
+		B2C2F83DBA36C6AFA50072FC /* Pods_FolderLocker_FolderLockerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5EEB219AB30EA05EC3E8BD0 /* Pods_FolderLocker_FolderLockerUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DE4B95FA7F51EAEEAFC6C17 /* Pods-FolderLockerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FolderLockerTests.release.xcconfig"; path = "Target Support Files/Pods-FolderLockerTests/Pods-FolderLockerTests.release.xcconfig"; sourceTree = "<group>"; };
+		2AF6EE02B516D55B53F9F54F /* Pods_FolderLocker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FolderLocker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30436A82D658A1BA8A4BF263 /* Pods-FolderLocker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FolderLocker.debug.xcconfig"; path = "Target Support Files/Pods-FolderLocker/Pods-FolderLocker.debug.xcconfig"; sourceTree = "<group>"; };
+		3469D2587BE3EF549849EAE0 /* Pods-FolderLocker-FolderLockerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FolderLocker-FolderLockerUITests.release.xcconfig"; path = "Target Support Files/Pods-FolderLocker-FolderLockerUITests/Pods-FolderLocker-FolderLockerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4CE1AC7D24B5291500A1E05B /* FolderLocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FolderLocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE1AC8024B5291500A1E05B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CE1AC8224B5291500A1E05B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +63,18 @@
 		4CE1AC9E24B5291A00A1E05B /* FolderLockerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FolderLockerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE1ACA224B5291A00A1E05B /* FolderLockerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderLockerUITests.swift; sourceTree = "<group>"; };
 		4CE1ACA424B5291A00A1E05B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CE1ACB224B5324C00A1E05B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4CF8273824B58340008B3F73 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		4CF8273A24B583EA008B3F73 /* FilesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesVC.swift; sourceTree = "<group>"; };
+		4CF8273C24B5842F008B3F73 /* textField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textField.swift; sourceTree = "<group>"; };
+		4CF8273E24B58444008B3F73 /* buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttons.swift; sourceTree = "<group>"; };
+		4CF8274024B584B8008B3F73 /* tapGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tapGesture.swift; sourceTree = "<group>"; };
+		4CF8274224B584D7008B3F73 /* alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alerts.swift; sourceTree = "<group>"; };
+		97D60A0D0A1623FF87884588 /* Pods-FolderLocker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FolderLocker.release.xcconfig"; path = "Target Support Files/Pods-FolderLocker/Pods-FolderLocker.release.xcconfig"; sourceTree = "<group>"; };
+		AEB33CA70744AC94B74D752B /* Pods-FolderLockerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FolderLockerTests.debug.xcconfig"; path = "Target Support Files/Pods-FolderLockerTests/Pods-FolderLockerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C5EEB219AB30EA05EC3E8BD0 /* Pods_FolderLocker_FolderLockerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FolderLocker_FolderLockerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6CCC3A5DCDEF6411C2B6253 /* Pods_FolderLockerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FolderLockerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE614BBB7FB8D4ECF8065CCB /* Pods-FolderLocker-FolderLockerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FolderLocker-FolderLockerUITests.debug.xcconfig"; path = "Target Support Files/Pods-FolderLocker-FolderLockerUITests/Pods-FolderLocker-FolderLockerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03EA2FB573EAD2D9B04780D5 /* Pods_FolderLocker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				754A1DCBCE011D23C28EA64F /* Pods_FolderLockerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +98,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2C2F83DBA36C6AFA50072FC /* Pods_FolderLocker_FolderLockerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A1B59132DAEB79656127149 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30436A82D658A1BA8A4BF263 /* Pods-FolderLocker.debug.xcconfig */,
+				97D60A0D0A1623FF87884588 /* Pods-FolderLocker.release.xcconfig */,
+				FE614BBB7FB8D4ECF8065CCB /* Pods-FolderLocker-FolderLockerUITests.debug.xcconfig */,
+				3469D2587BE3EF549849EAE0 /* Pods-FolderLocker-FolderLockerUITests.release.xcconfig */,
+				AEB33CA70744AC94B74D752B /* Pods-FolderLockerTests.debug.xcconfig */,
+				1DE4B95FA7F51EAEEAFC6C17 /* Pods-FolderLockerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		475E7EB58EB37B0B04392F57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AF6EE02B516D55B53F9F54F /* Pods_FolderLocker.framework */,
+				C5EEB219AB30EA05EC3E8BD0 /* Pods_FolderLocker_FolderLockerUITests.framework */,
+				C6CCC3A5DCDEF6411C2B6253 /* Pods_FolderLockerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4CE1AC7424B5291500A1E05B = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +135,8 @@
 				4CE1AC9624B5291A00A1E05B /* FolderLockerTests */,
 				4CE1ACA124B5291A00A1E05B /* FolderLockerUITests */,
 				4CE1AC7E24B5291500A1E05B /* Products */,
+				0A1B59132DAEB79656127149 /* Pods */,
+				475E7EB58EB37B0B04392F57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +155,14 @@
 			children = (
 				4CE1AC8024B5291500A1E05B /* AppDelegate.swift */,
 				4CE1AC8224B5291500A1E05B /* SceneDelegate.swift */,
+				4CF8274424B58511008B3F73 /* designAndUtilities */,
 				4CE1AC8424B5291500A1E05B /* ViewController.swift */,
+				4CF8273824B58340008B3F73 /* SignUpVC.swift */,
+				4CF8273A24B583EA008B3F73 /* FilesVC.swift */,
 				4CE1AC8624B5291500A1E05B /* Main.storyboard */,
 				4CE1AC8924B5291900A1E05B /* Assets.xcassets */,
 				4CE1AC8B24B5291900A1E05B /* LaunchScreen.storyboard */,
+				4CE1ACB224B5324C00A1E05B /* GoogleService-Info.plist */,
 				4CE1AC8E24B5291900A1E05B /* Info.plist */,
 			);
 			path = FolderLocker;
@@ -128,6 +186,17 @@
 			path = FolderLockerUITests;
 			sourceTree = "<group>";
 		};
+		4CF8274424B58511008B3F73 /* designAndUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				4CF8273C24B5842F008B3F73 /* textField.swift */,
+				4CF8273E24B58444008B3F73 /* buttons.swift */,
+				4CF8274024B584B8008B3F73 /* tapGesture.swift */,
+				4CF8274224B584D7008B3F73 /* alerts.swift */,
+			);
+			path = designAndUtilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CE1ACA724B5291A00A1E05B /* Build configuration list for PBXNativeTarget "FolderLocker" */;
 			buildPhases = (
+				76D3A1AE263E70F7D4C2FDD8 /* [CP] Check Pods Manifest.lock */,
 				4CE1AC7924B5291500A1E05B /* Sources */,
 				4CE1AC7A24B5291500A1E05B /* Frameworks */,
 				4CE1AC7B24B5291500A1E05B /* Resources */,
+				9BB39FCD00BFC7B3A453D0E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +223,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CE1ACAA24B5291A00A1E05B /* Build configuration list for PBXNativeTarget "FolderLockerTests" */;
 			buildPhases = (
+				07A884A183A5AFA9509FC7AF /* [CP] Check Pods Manifest.lock */,
 				4CE1AC8F24B5291A00A1E05B /* Sources */,
 				4CE1AC9024B5291A00A1E05B /* Frameworks */,
 				4CE1AC9124B5291A00A1E05B /* Resources */,
@@ -170,9 +242,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CE1ACAD24B5291A00A1E05B /* Build configuration list for PBXNativeTarget "FolderLockerUITests" */;
 			buildPhases = (
+				7E8762F387BD2DDF7FCF46EA /* [CP] Check Pods Manifest.lock */,
 				4CE1AC9A24B5291A00A1E05B /* Sources */,
 				4CE1AC9B24B5291A00A1E05B /* Frameworks */,
 				4CE1AC9C24B5291A00A1E05B /* Resources */,
+				51D38EEEE5BD411684EFB381 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CE1AC8D24B5291900A1E05B /* LaunchScreen.storyboard in Resources */,
+				4CE1ACB324B5324C00A1E05B /* GoogleService-Info.plist in Resources */,
 				4CE1AC8A24B5291900A1E05B /* Assets.xcassets in Resources */,
 				4CE1AC8824B5291500A1E05B /* Main.storyboard in Resources */,
 			);
@@ -254,14 +329,123 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07A884A183A5AFA9509FC7AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FolderLockerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51D38EEEE5BD411684EFB381 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FolderLocker-FolderLockerUITests/Pods-FolderLocker-FolderLockerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FolderLocker-FolderLockerUITests/Pods-FolderLocker-FolderLockerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FolderLocker-FolderLockerUITests/Pods-FolderLocker-FolderLockerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76D3A1AE263E70F7D4C2FDD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FolderLocker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E8762F387BD2DDF7FCF46EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FolderLocker-FolderLockerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BB39FCD00BFC7B3A453D0E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FolderLocker/Pods-FolderLocker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FolderLocker/Pods-FolderLocker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FolderLocker/Pods-FolderLocker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4CE1AC7924B5291500A1E05B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF8273924B58340008B3F73 /* SignUpVC.swift in Sources */,
+				4CF8273B24B583EA008B3F73 /* FilesVC.swift in Sources */,
+				4CF8274324B584D7008B3F73 /* alerts.swift in Sources */,
 				4CE1AC8524B5291500A1E05B /* ViewController.swift in Sources */,
+				4CF8273D24B5842F008B3F73 /* textField.swift in Sources */,
 				4CE1AC8124B5291500A1E05B /* AppDelegate.swift in Sources */,
 				4CE1AC8324B5291500A1E05B /* SceneDelegate.swift in Sources */,
+				4CF8273F24B58444008B3F73 /* buttons.swift in Sources */,
+				4CF8274124B584B8008B3F73 /* tapGesture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +616,7 @@
 		};
 		4CE1ACA824B5291A00A1E05B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30436A82D658A1BA8A4BF263 /* Pods-FolderLocker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +634,7 @@
 		};
 		4CE1ACA924B5291A00A1E05B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97D60A0D0A1623FF87884588 /* Pods-FolderLocker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +652,7 @@
 		};
 		4CE1ACAB24B5291A00A1E05B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEB33CA70744AC94B74D752B /* Pods-FolderLockerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +674,7 @@
 		};
 		4CE1ACAC24B5291A00A1E05B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DE4B95FA7F51EAEEAFC6C17 /* Pods-FolderLockerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +696,7 @@
 		};
 		4CE1ACAE24B5291A00A1E05B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE614BBB7FB8D4ECF8065CCB /* Pods-FolderLocker-FolderLockerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +716,7 @@
 		};
 		4CE1ACAF24B5291A00A1E05B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3469D2587BE3EF549849EAE0 /* Pods-FolderLocker-FolderLockerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

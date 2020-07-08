@@ -10,11 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var signBtn: UIButton!
+    @IBOutlet weak var signUpBtn: UIButton!
+    @IBOutlet weak var emialField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Foldr Locker using Firebase")
     }
-
-
+   
+    @IBAction func didTapSignUpAction(_ sender: UIButton) {
+    }
+    @IBAction func didTapSignInAction(_ sender: UIButton) {
+        
+    }
+    
 }
 
