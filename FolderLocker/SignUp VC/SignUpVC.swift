@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import FirebaseAuth
+import FirebaseFirestore
 class SignUpVC: UIViewController {
     // to store the current active textfield
      var activeTextField : UITextField? = nil
@@ -28,6 +29,7 @@ class SignUpVC: UIViewController {
                    self.viewHeight.constant = 250
                }
         notificationCenter()
+        btnANimation(btn:CustomBtn )
     }
     func btnANimation(btn:UIButton){
               UIView.animate(withDuration: 0.6,
@@ -91,31 +93,46 @@ class SignUpVC: UIViewController {
         }else if !isValidEmail(emailField.text!) || emailField.text == ""{
                    showAlert(title: "Email is Empty or Not Valid", message: "Enter valid Email")
         }else if !isValidpassword(passwordField.text!) || passwordField.text == ""{
-                   showAlert(title: "Password is Empty or Not Valid", message: "Enter valid Password")
+                   showAlert(title: "Password is Empty or Not Valid", message: "Enter valid Password with 1 Capital letter,1 symbol ")
         }else if confirmPswdField.text != passwordField.text || confirmPswdField.text == ""{
             showAlert(title: "Password Not Matched", message: "Enter Correct Password")
         }else if mobileNumberNameField.text == "" {
             showAlert(title: "Mobile Number is  Empty", message: "Enter Mobile Number")
-        }else if !isValidateMobileNo(value: mobileNumberNameField.text!) || mobileNumberNameField.text!.count != 10{
+        }else if !isValidPhone(phone: mobileNumberNameField.text!) || mobileNumberNameField.text!.count != 10{
             showAlert(title: "Mobile Number is Not Valid", message: "Enter Valid Mobile Number")
         }else {
-            let HomeVc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "FilesVC") as! FilesVC
-            self.navigationController?.pushViewController(HomeVc, animated: true)
+            // crete cleaned data
+            let firstName = firstNameField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+             let lastName = lastNameField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+             let email = emailField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+             let password = passwordField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+             let mobileNumber = mobileNumberNameField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            
+            // crete user
+            Auth.auth().createUser(withEmail: email, password: password) { (results, err) in
+                // check for errors
+                if err != nil{
+                    // There was an error
+                    self.showAlert(title: "\(err?.localizedDescription as Any)", message: "Enter Valid Details")
+                    print(err?.localizedDescription as Any)
+                }else{
+                    
+                    // user was created successfully.
+                    let db = Firestore.firestore()
+                    db.collection("users").addDocument(data: ["firstname" : firstName,"lastname": lastName,"mobilenumber" : mobileNumber,"uid":results!.user.uid]) { (error) in
+                        if error != nil{
+                            // show error message
+                        }
+                    }
+                    self.transitionToHome()
+                }
+            }
         }
-        
     }
     @IBAction func dismissView(_ sender : UIButton){
         self.dismiss(animated: true, completion: nil)
     }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     // MARK:- Email,Password and Mobile Number Validations.
        func isValidEmail(_ email: String) -> Bool {
              let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
@@ -134,6 +151,17 @@ class SignUpVC: UIViewController {
                  let result = phoneTest.evaluate(with: value)
                  return result
              }
+    func isValidPhone(phone: String) -> Bool {
+           let phoneRegex = "^[0-9+]{0,1}+[0-9]{5,16}$"
+           let phoneTest = NSPredicate(format: "SELF MATCHES %@", phoneRegex)
+           return phoneTest.evaluate(with: phone)
+       }
+    func transitionToHome() {
+        let homeViewController = storyboard?.instantiateViewController(identifier: GotoHomeVC.Storyboard.homeViewController) as? FilesVC
+           view.window?.rootViewController = homeViewController
+           view.window?.makeKeyAndVisible()
+           
+       }
 }
 extension SignUpVC : UITextFieldDelegate {
   // when user select a textfield, this method will be called

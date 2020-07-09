@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		03EA2FB573EAD2D9B04780D5 /* Pods_FolderLocker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF6EE02B516D55B53F9F54F /* Pods_FolderLocker.framework */; };
 		4CB6D43824B68E240037DF60 /* views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6D43724B68E240037DF60 /* views.swift */; };
+		4CDB20E024B7AEFC00EB642E /* GotoVcs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB20DF24B7AEFC00EB642E /* GotoVcs.swift */; };
 		4CE1AC8124B5291500A1E05B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1AC8024B5291500A1E05B /* AppDelegate.swift */; };
 		4CE1AC8324B5291500A1E05B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1AC8224B5291500A1E05B /* SceneDelegate.swift */; };
 		4CE1AC8524B5291500A1E05B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1AC8424B5291500A1E05B /* ViewController.swift */; };
@@ -51,6 +52,7 @@
 		30436A82D658A1BA8A4BF263 /* Pods-FolderLocker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FolderLocker.debug.xcconfig"; path = "Target Support Files/Pods-FolderLocker/Pods-FolderLocker.debug.xcconfig"; sourceTree = "<group>"; };
 		3469D2587BE3EF549849EAE0 /* Pods-FolderLocker-FolderLockerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FolderLocker-FolderLockerUITests.release.xcconfig"; path = "Target Support Files/Pods-FolderLocker-FolderLockerUITests/Pods-FolderLocker-FolderLockerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4CB6D43724B68E240037DF60 /* views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = views.swift; sourceTree = "<group>"; };
+		4CDB20DF24B7AEFC00EB642E /* GotoVcs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GotoVcs.swift; sourceTree = "<group>"; };
 		4CE1AC7D24B5291500A1E05B /* FolderLocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FolderLocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE1AC8024B5291500A1E05B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CE1AC8224B5291500A1E05B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,7 +183,7 @@
 			children = (
 				4CE1AC8024B5291500A1E05B /* AppDelegate.swift */,
 				4CE1AC8224B5291500A1E05B /* SceneDelegate.swift */,
-				4CF8274424B58511008B3F73 /* designAndUtilities */,
+				4CF8274424B58511008B3F73 /* Helpers */,
 				4CB6D43424B664DF0037DF60 /* SignIn VC */,
 				4CB6D43524B664F90037DF60 /* SignUp VC */,
 				4CB6D43624B6651A0037DF60 /* Home VC */,
@@ -212,7 +214,7 @@
 			path = FolderLockerUITests;
 			sourceTree = "<group>";
 		};
-		4CF8274424B58511008B3F73 /* designAndUtilities */ = {
+		4CF8274424B58511008B3F73 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				4CF8273C24B5842F008B3F73 /* textField.swift */,
@@ -220,8 +222,9 @@
 				4CF8274024B584B8008B3F73 /* tapGesture.swift */,
 				4CF8274224B584D7008B3F73 /* alerts.swift */,
 				4CB6D43724B68E240037DF60 /* views.swift */,
+				4CDB20DF24B7AEFC00EB642E /* GotoVcs.swift */,
 			);
-			path = designAndUtilities;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,6 +476,7 @@
 				4CE1AC8324B5291500A1E05B /* SceneDelegate.swift in Sources */,
 				4CF8273F24B58444008B3F73 /* buttons.swift in Sources */,
 				4CB6D43824B68E240037DF60 /* views.swift in Sources */,
+				4CDB20E024B7AEFC00EB642E /* GotoVcs.swift in Sources */,
 				4CF8274124B584B8008B3F73 /* tapGesture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

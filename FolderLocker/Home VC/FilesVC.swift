@@ -27,6 +27,17 @@ class FilesVC: UIViewController {
     }
     @IBAction func didTapCameraAction(_ sender: UIButton) {
     }
+    func btnANimation(btn:UIButton){
+                UIView.animate(withDuration: 0.6,
+                       animations: {
+                           btn.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
+                       },
+                       completion: { _ in
+                           UIView.animate(withDuration: 0.6) {
+                               btn.transform = CGAffineTransform.identity
+                           }
+                       })
+            }
     /*
     // MARK: - Navigation
 

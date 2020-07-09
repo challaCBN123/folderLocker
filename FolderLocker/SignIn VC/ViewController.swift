@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import FirebaseAuth
 class ViewController: UIViewController , UITextFieldDelegate{
 
     @IBOutlet weak var viewHeight: NSLayoutConstraint!
@@ -36,6 +36,8 @@ class ViewController: UIViewController , UITextFieldDelegate{
         self.present(signUpVC, animated: true, completion: nil)
     }
     @IBAction func didTapSignInAction(_ sender: UIButton) {
+        let email = emialField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = passwordField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         if emialField.text == "" && passwordField.text == ""{
             showAlert(title: "Empty Fields", message: "Enter Email And Password")
         }else if emialField.text == "" && passwordField.text != ""{
@@ -43,8 +45,16 @@ class ViewController: UIViewController , UITextFieldDelegate{
         }else if emialField.text != "" && passwordField.text == ""{
             showAlert(title: "Empty Password Field", message: "Enter Password")
         }else {
-            let HomeVc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "FilesVC") as! FilesVC
-            self.navigationController?.pushViewController(HomeVc, animated: true)
+            // signing user
+            Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+                if error != nil{
+                    self.showAlert(title: "Error", message: "Enter Valid Details")
+                }else {
+                    let homeViewController = self.storyboard?.instantiateViewController(identifier: GotoHomeVC.Storyboard.homeViewController) as? FilesVC
+                    self.view.window?.rootViewController = homeViewController
+                    self.view.window?.makeKeyAndVisible()
+                }
+            }
         }
         
     }
