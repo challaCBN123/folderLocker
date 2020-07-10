@@ -9,13 +9,46 @@
 import UIKit
 
 class FilesVC: UIViewController {
-@IBOutlet weak var cameraBtn : UIButton!
+     let menuArray = ["Images","Pdfs","Excels","Others"]
+    @IBOutlet weak var menuTableList: UITableView!
+    @IBOutlet weak var grid_View: UIView!
+    @IBOutlet weak var gridViewHeight: NSLayoutConstraint!
+    @IBOutlet weak var list_View : UIView!
+    @IBOutlet weak var cameraBtn : UIButton!
+    @IBOutlet weak var menuStyle : UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
+        menuTableList.separatorStyle = .none
+        grid_View.isHidden = true
         self.navigationItem.hidesBackButton = true
-        // Do any additional setup after loading the view.
+        if UIScreen.main.bounds.height < 600{
+                          self.gridViewHeight.constant = 280
+                      }
+        self.registerCell()
     }
-    
+    func registerCell(){
+        let nibName = UINib(nibName: "listCell", bundle: nil)
+        menuTableList.register(nibName, forCellReuseIdentifier: "listCell")
+    }
+    @IBAction func didTapStyle(_ sender: UIBarButtonItem) {
+        if grid_View.isHidden == true {
+            UIView.animate(withDuration: 0.5, animations: {
+                self.list_View.isHidden = true
+            }) { (done) in
+                if done{
+                    self.grid_View.isHidden = false
+                }
+            }
+        } else if list_View.isHidden == true {
+            UIView.animate(withDuration: 0.5, animations: {
+                self.grid_View.isHidden = true
+            }) { (done) in
+                if done{
+                    self.list_View.isHidden = false
+                }
+            }
+        }
+    }
     @IBAction func didTapImages(_ sender: UIButton) {
     }
     @IBAction func didTapPdf(_ sender: UIButton) {
@@ -48,4 +81,20 @@ class FilesVC: UIViewController {
     }
     */
 
+}
+extension FilesVC : UITableViewDelegate,UITableViewDataSource {
+   
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return menuArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = menuTableList.dequeueReusableCell(withIdentifier: "listCell", for: indexPath) as! listCell
+        cell.menuListLbl.text = menuArray[indexPath.row]
+        return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
+    
 }

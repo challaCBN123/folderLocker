@@ -9,7 +9,7 @@
 import UIKit
 extension UIViewController{
     func hideKeyBoardOnTap(){
-           let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SignUpVC.backgroundTap))
+           let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.backgroundTap))
                        self.view.addGestureRecognizer(tapGestureRecognizer)
        }
     @objc func backgroundTap(_ sender: UITapGestureRecognizer) {
