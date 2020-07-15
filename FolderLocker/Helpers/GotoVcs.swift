@@ -9,7 +9,8 @@
 import Foundation
 struct GotoHomeVC {
     struct Storyboard {
-        static let homeViewController = "FilesVC"
+        static let homeViewController = "HomeVC"
+        
     }
 }
 

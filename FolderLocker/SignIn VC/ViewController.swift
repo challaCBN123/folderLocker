@@ -50,14 +50,16 @@ class ViewController: UIViewController , UITextFieldDelegate{
                 if error != nil{
                     self.showAlert(title: "Error", message: "Enter Valid Details")
                 }else {
-                    let homeViewController = self.storyboard?.instantiateViewController(identifier: GotoHomeVC.Storyboard.homeViewController) as? FilesVC
-                    self.view.window?.rootViewController = homeViewController
-                    self.view.window?.makeKeyAndVisible()
+                    
                 }
             }
+            self.transitinToHome()
         }
         
     }
-    
+    func transitinToHome(){
+      let homeViewController = storyboard?.instantiateViewController(identifier: "HomeVC") as? HomeVC
+               self.navigationController?.pushViewController(homeViewController!, animated: true)
+    }
 }
 

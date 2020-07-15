@@ -129,6 +129,10 @@ class SignUpVC: UIViewController {
             }
         }
     }
+    func transitionToHome(){
+        let homeViewController = storyboard?.instantiateViewController(identifier: "HomeVC") as? HomeVC
+        self.navigationController?.pushViewController(homeViewController!, animated: true)
+    }
     @IBAction func dismissView(_ sender : UIButton){
         self.dismiss(animated: true, completion: nil)
     }
@@ -156,12 +160,7 @@ class SignUpVC: UIViewController {
            let phoneTest = NSPredicate(format: "SELF MATCHES %@", phoneRegex)
            return phoneTest.evaluate(with: phone)
        }
-    func transitionToHome() {
-        let homeViewController = storyboard?.instantiateViewController(identifier: GotoHomeVC.Storyboard.homeViewController) as? FilesVC
-           view.window?.rootViewController = homeViewController
-           view.window?.makeKeyAndVisible()
-           
-       }
+   
 }
 extension SignUpVC : UITextFieldDelegate {
   // when user select a textfield, this method will be called

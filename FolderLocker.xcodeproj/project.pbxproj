@@ -9,12 +9,10 @@
 /* Begin PBXBuildFile section */
 		03EA2FB573EAD2D9B04780D5 /* Pods_FolderLocker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF6EE02B516D55B53F9F54F /* Pods_FolderLocker.framework */; };
 		4C65B7AB24B8D9FC00D281F0 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C65B7AA24B8D9FC00D281F0 /* HomeVC.swift */; };
-		4C65B7AE24B8F93100D281F0 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C65B7AC24B8F93100D281F0 /* HomeCell.swift */; };
-		4C65B7AF24B8F93100D281F0 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C65B7AD24B8F93100D281F0 /* HomeCell.xib */; };
 		4CB6D43824B68E240037DF60 /* views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6D43724B68E240037DF60 /* views.swift */; };
+		4CD14F8824BCB57E00E51B09 /* HomeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD14F8724BCB57E00E51B09 /* HomeTableCell.swift */; };
+		4CD14F8A24BCB82D00E51B09 /* HomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD14F8924BCB82D00E51B09 /* HomeCollectionCell.swift */; };
 		4CDB20E024B7AEFC00EB642E /* GotoVcs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB20DF24B7AEFC00EB642E /* GotoVcs.swift */; };
-		4CDB20E324B7BC9D00EB642E /* listCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB20E124B7BC9D00EB642E /* listCell.swift */; };
-		4CDB20E424B7BC9D00EB642E /* listCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CDB20E224B7BC9D00EB642E /* listCell.xib */; };
 		4CE1AC8124B5291500A1E05B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1AC8024B5291500A1E05B /* AppDelegate.swift */; };
 		4CE1AC8324B5291500A1E05B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1AC8224B5291500A1E05B /* SceneDelegate.swift */; };
 		4CE1AC8524B5291500A1E05B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1AC8424B5291500A1E05B /* ViewController.swift */; };
@@ -24,8 +22,10 @@
 		4CE1AC9824B5291A00A1E05B /* FolderLockerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1AC9724B5291A00A1E05B /* FolderLockerTests.swift */; };
 		4CE1ACA324B5291A00A1E05B /* FolderLockerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1ACA224B5291A00A1E05B /* FolderLockerUITests.swift */; };
 		4CE1ACB324B5324C00A1E05B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CE1ACB224B5324C00A1E05B /* GoogleService-Info.plist */; };
+		4CE1BBE624BD76BE006814CD /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1BBE524BD76BE006814CD /* VideoCollectionViewCell.swift */; };
+		4CE1BBE824BD76D3006814CD /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1BBE724BD76D3006814CD /* VideoTableViewCell.swift */; };
+		4CE1BC2924BE1637006814CD /* AudioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1BC2824BE1637006814CD /* AudioTableViewCell.swift */; };
 		4CF8273924B58340008B3F73 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8273824B58340008B3F73 /* SignUpVC.swift */; };
-		4CF8273B24B583EA008B3F73 /* FilesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8273A24B583EA008B3F73 /* FilesVC.swift */; };
 		4CF8273D24B5842F008B3F73 /* textField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8273C24B5842F008B3F73 /* textField.swift */; };
 		4CF8273F24B58444008B3F73 /* buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8273E24B58444008B3F73 /* buttons.swift */; };
 		4CF8274124B584B8008B3F73 /* tapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8274024B584B8008B3F73 /* tapGesture.swift */; };
@@ -57,12 +57,10 @@
 		30436A82D658A1BA8A4BF263 /* Pods-FolderLocker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FolderLocker.debug.xcconfig"; path = "Target Support Files/Pods-FolderLocker/Pods-FolderLocker.debug.xcconfig"; sourceTree = "<group>"; };
 		3469D2587BE3EF549849EAE0 /* Pods-FolderLocker-FolderLockerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FolderLocker-FolderLockerUITests.release.xcconfig"; path = "Target Support Files/Pods-FolderLocker-FolderLockerUITests/Pods-FolderLocker-FolderLockerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4C65B7AA24B8D9FC00D281F0 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		4C65B7AC24B8F93100D281F0 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
-		4C65B7AD24B8F93100D281F0 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		4CB6D43724B68E240037DF60 /* views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = views.swift; sourceTree = "<group>"; };
+		4CD14F8724BCB57E00E51B09 /* HomeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableCell.swift; sourceTree = "<group>"; };
+		4CD14F8924BCB82D00E51B09 /* HomeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionCell.swift; sourceTree = "<group>"; };
 		4CDB20DF24B7AEFC00EB642E /* GotoVcs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GotoVcs.swift; sourceTree = "<group>"; };
-		4CDB20E124B7BC9D00EB642E /* listCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listCell.swift; sourceTree = "<group>"; };
-		4CDB20E224B7BC9D00EB642E /* listCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = listCell.xib; sourceTree = "<group>"; };
 		4CE1AC7D24B5291500A1E05B /* FolderLocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FolderLocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE1AC8024B5291500A1E05B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CE1AC8224B5291500A1E05B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,8 +76,10 @@
 		4CE1ACA224B5291A00A1E05B /* FolderLockerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderLockerUITests.swift; sourceTree = "<group>"; };
 		4CE1ACA424B5291A00A1E05B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CE1ACB224B5324C00A1E05B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4CE1BBE524BD76BE006814CD /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		4CE1BBE724BD76D3006814CD /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		4CE1BC2824BE1637006814CD /* AudioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTableViewCell.swift; sourceTree = "<group>"; };
 		4CF8273824B58340008B3F73 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
-		4CF8273A24B583EA008B3F73 /* FilesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesVC.swift; sourceTree = "<group>"; };
 		4CF8273C24B5842F008B3F73 /* textField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textField.swift; sourceTree = "<group>"; };
 		4CF8273E24B58444008B3F73 /* buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttons.swift; sourceTree = "<group>"; };
 		4CF8274024B584B8008B3F73 /* tapGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tapGesture.swift; sourceTree = "<group>"; };
@@ -161,12 +161,10 @@
 		4CB6D43624B6651A0037DF60 /* Home VC */ = {
 			isa = PBXGroup;
 			children = (
-				4CF8273A24B583EA008B3F73 /* FilesVC.swift */,
 				4C65B7AA24B8D9FC00D281F0 /* HomeVC.swift */,
-				4C65B7AC24B8F93100D281F0 /* HomeCell.swift */,
-				4C65B7AD24B8F93100D281F0 /* HomeCell.xib */,
-				4CDB20E124B7BC9D00EB642E /* listCell.swift */,
-				4CDB20E224B7BC9D00EB642E /* listCell.xib */,
+				4CE1BBE324BD7670006814CD /* ImageCells */,
+				4CE1BBE924BD76E0006814CD /* VideoCells */,
+				4CE1BC2824BE1637006814CD /* AudioTableViewCell.swift */,
 			);
 			path = "Home VC";
 			sourceTree = "<group>";
@@ -227,6 +225,24 @@
 				4CE1ACA424B5291A00A1E05B /* Info.plist */,
 			);
 			path = FolderLockerUITests;
+			sourceTree = "<group>";
+		};
+		4CE1BBE324BD7670006814CD /* ImageCells */ = {
+			isa = PBXGroup;
+			children = (
+				4CD14F8724BCB57E00E51B09 /* HomeTableCell.swift */,
+				4CD14F8924BCB82D00E51B09 /* HomeCollectionCell.swift */,
+			);
+			path = ImageCells;
+			sourceTree = "<group>";
+		};
+		4CE1BBE924BD76E0006814CD /* VideoCells */ = {
+			isa = PBXGroup;
+			children = (
+				4CE1BBE724BD76D3006814CD /* VideoTableViewCell.swift */,
+				4CE1BBE524BD76BE006814CD /* VideoCollectionViewCell.swift */,
+			);
+			path = VideoCells;
 			sourceTree = "<group>";
 		};
 		4CF8274424B58511008B3F73 /* Helpers */ = {
@@ -351,11 +367,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CDB20E424B7BC9D00EB642E /* listCell.xib in Resources */,
 				4CE1AC8D24B5291900A1E05B /* LaunchScreen.storyboard in Resources */,
 				4CE1ACB324B5324C00A1E05B /* GoogleService-Info.plist in Resources */,
 				4CE1AC8A24B5291900A1E05B /* Assets.xcassets in Resources */,
-				4C65B7AF24B8F93100D281F0 /* HomeCell.xib in Resources */,
 				4CE1AC8824B5291500A1E05B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,20 +498,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CE1BBE624BD76BE006814CD /* VideoCollectionViewCell.swift in Sources */,
 				4CF8273924B58340008B3F73 /* SignUpVC.swift in Sources */,
-				4CF8273B24B583EA008B3F73 /* FilesVC.swift in Sources */,
 				4CF8274324B584D7008B3F73 /* alerts.swift in Sources */,
 				4CE1AC8524B5291500A1E05B /* ViewController.swift in Sources */,
 				4C65B7AB24B8D9FC00D281F0 /* HomeVC.swift in Sources */,
 				4CF8273D24B5842F008B3F73 /* textField.swift in Sources */,
-				4CDB20E324B7BC9D00EB642E /* listCell.swift in Sources */,
 				4CE1AC8124B5291500A1E05B /* AppDelegate.swift in Sources */,
-				4C65B7AE24B8F93100D281F0 /* HomeCell.swift in Sources */,
 				4CE1AC8324B5291500A1E05B /* SceneDelegate.swift in Sources */,
+				4CE1BC2924BE1637006814CD /* AudioTableViewCell.swift in Sources */,
 				4CF8273F24B58444008B3F73 /* buttons.swift in Sources */,
+				4CD14F8A24BCB82D00E51B09 /* HomeCollectionCell.swift in Sources */,
 				4CB6D43824B68E240037DF60 /* views.swift in Sources */,
 				4CDB20E024B7AEFC00EB642E /* GotoVcs.swift in Sources */,
 				4CF8274124B584B8008B3F73 /* tapGesture.swift in Sources */,
+				4CD14F8824BCB57E00E51B09 /* HomeTableCell.swift in Sources */,
+				4CE1BBE824BD76D3006814CD /* VideoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,17 +1,16 @@
 //
-//  listCell.swift
+//  AudioTableViewCell.swift
 //  FolderLocker
 //
-//  Created by Bhargava on 09/07/20.
+//  Created by Bhargava on 14/07/20.
 //  Copyright © 2020 Bhargava. All rights reserved.
 //
 
 import UIKit
 
-class listCell: UITableViewCell {
-    @IBOutlet weak var viewStyle: UIView!
-    
-    @IBOutlet weak var menuListLbl: UILabel!
+class AudioTableViewCell: UITableViewCell {
+
+    @IBOutlet weak var audioCellLbl: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,5 +21,5 @@ class listCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
 }
