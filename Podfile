@@ -8,6 +8,7 @@ target 'FolderLocker' do
   pod 'Firebase/Auth'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
   # Pods for FolderLocker
 
   target 'FolderLockerTests' do
